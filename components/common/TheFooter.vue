@@ -3,7 +3,7 @@
 </template>
 <style scoped lang="scss">
   .footer {
-    background-color: $color-gray;
+    background-color:#aaa;
     text-align: center;
     line-height: 30px;
   }

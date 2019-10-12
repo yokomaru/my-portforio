@@ -19,7 +19,7 @@
       }
 
       a {
-        color: $color-blue;
+        color: #3581FF;
       }
     }
 
@@ -36,6 +36,7 @@
     }
 
     img {
+      align-items: center;
       max-width: 100%;
     }
   }

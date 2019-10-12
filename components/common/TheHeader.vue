@@ -8,7 +8,7 @@
 </template>
 <style scoped lang="scss">
   .header {
-    background-color: $color-gray;
+    background-color: #aaa;
   }
 
   .header-inner {
