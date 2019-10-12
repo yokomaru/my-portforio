@@ -3,7 +3,7 @@
     <section class="about">
       <h2 class="section-title">夏目漱石</h2>
       <ArticleBody>
-        <img src="~/assets/images/yokopoko_right.png" alt="夏目漱石">
+        <img src="~/assets/images/yokopoko.gif" alt="夏目漱石">
         <p>日本の小説家、評論家、英文学者。本名、夏目 金之助（なつめ きんのすけ）。江戸の牛込馬場下横町（現在の東京都新宿区喜久井町）出身。俳号は愚陀仏。詳細は<a href="<https://ja.wikipedia.org/wiki/夏目漱石>" target="_blank">ウィキペディア</a>を。</p>
       </ArticleBody>
     </section>
