@@ -1,9 +1,8 @@
-
 <template>
   <div class="page-index">
     <body id="top">
       <div id="app">
-        <section class="top">
+        <!--<section class="top">
           <ul>
             <li>
               <a href="#section1" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">セクション1</a>
@@ -15,13 +14,45 @@
               <a href="#section3" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">セクション3</a>
             </li>
           </ul>
-        </section>
+        </section>-->
         <div id="section1">
           <section class="name">
-                <img src="~/assets/images/Y.png" >
-                <img src="~/assets/images/O.png" >
-                <img src="~/assets/images/K.png" >
-                <img src="~/assets/images/O.png" >
+            <a href="#section2" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">
+              <div class="img-box">
+                <img src="~/assets/images/Y.png" alt="" class="no-active">
+                <!--<img src="~/assets/images/icon.png" alt="" class="active">-->
+                <div class="active"> 
+                    <div class = "contents-icon">about</div>
+                </div>
+              </div>
+            </a>
+            <a href="#section3" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">
+              <div class="img-box">
+                <img src="~/assets/images/O.png" alt="" class="no-active">
+                <!--<img src="~/assets/images/icon.png" alt="" class="active">-->
+                <div class="active"> 
+                    <div class = "contents-icon">works</div>
+                </div>
+              </div>
+            </a>
+            <a href="#section4" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">
+              <div class="img-box">
+                <img src="~/assets/images/K.png" alt="" class="no-active">
+                <!--<img src="~/assets/images/icon.png" alt="" class="active">-->
+                  <div class="active"> 
+                    <div class = "contents-icon">skills</div>
+                  </div>
+              </div>
+            </a>
+            <a href="#section5" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">
+              <div class="img-box">
+                <img src="~/assets/images/O.png" alt="" class="no-active">
+                <!--<img src="~/assets/images/icon.png" alt="" class="active">-->
+                <div class="active"> 
+                  <div class = "contents-icon">contact</div>
+                </div>
+              </div>
+            </a>
                 <img src="~/assets/images/s.png" >
           </section>
           <section class="mygif">
@@ -29,27 +60,38 @@
           </section>
           <section class="portfolio">
                 <img src="~/assets/images/P.png">
-                <img src="~/assets/images/O.png">
+                <img src="~/assets/images/lO.png">
                 <img src="~/assets/images/R.png">
                 <img src="~/assets/images/T.png">
                 <img src="~/assets/images/F.png">
-                <img src="~/assets/images/O.png">
+                <img src="~/assets/images/lO.png">
                 <img src="~/assets/images/L.png">
                 <img src="~/assets/images/I.png">
-                <img src="~/assets/images/O.png">
+                <img src="~/assets/images/lO.png">
           </section>
         </div>
         <div id="section2">
-          <section class="works">
-            <h2 class="section-title">代表作</h2>
-            <ArticleBody>
-              <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
-              <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
-              <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
-            </ArticleBody>
+            <section class="section" id="about">
+              <div class="inner">
+                <div class="section-title-block">
+                  <h2 class="section-title">ABOUT</h2>
+                  <p class="section-desc">
+                    こんにちは。ヤマダハナコと申します。
+                  </p>
+                </div>
+                  <div class="two-column-wrapper">
+                    <div class="two-column-image">
+                      <img src="~/assets/images/about-me.png" alt="">
+                    </div>
+                    <div class="two-column-desc">
+                      <p class="text">
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br><br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br><br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </p>
+                    </div>
+                </div>
+            </div>
           </section>
         </div>
-      </div>
         <div id="section3">
           <section class="works">
             <h2 class="section-title">代表作</h2>
@@ -60,11 +102,32 @@
             </ArticleBody>
           </section>
         </div>
-        <div v-scroll="handleScroll" 
+        <div id="section4">
+          <section class="skills">
+            <h2 class="section-title">代表作</h2>
+            <ArticleBody>
+              <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
+              <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
+              <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
+            </ArticleBody>
+          </section>
+        </div>
+        <div id="section5">
+          <section class="contact">
+            <h2 class="section-title">代表作</h2>
+            <ArticleBody>
+              <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
+              <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
+              <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
+            </ArticleBody>
+          </section>
+        </div>
+      </div>
+    </body>
+            <div v-scroll="handleScroll" 
           :class="{visible: visible}">
             <a href="#top" v-smooth-scroll>トップへ戻る</a>
         </div>
-    </body>
   </div>
 </template>
 
@@ -77,7 +140,12 @@
   export default {
     components: {
       ArticleBody
+    },
+      data() {
+    return {
+      imgSrc: require("~/assets/images/Y.png")
     }
+  }
 //head () {
 //     return {
 //        link: [
@@ -86,8 +154,7 @@
 //        ]
 //      }
 //    }
-  }
-
+}
 // 必ずVueインスタンス作成前に登録する
 Vue.directive('scroll', {
   inserted: function (el, binding) {
@@ -113,7 +180,28 @@ const app = new Vue({
     }
   }
 });
-
+/*document.addEventListener('DOMContentLoaded', function() {
+        new Vue({
+          el: '#imgtest',
+ 
+          //ここから追加する
+          methods: {
+            // mouseover時の処理
+            changeImg: function(e) {
+              var imgUrl = e.target.getAttribute("src");
+              var imgUrl = imgUrl.replace(/\/(.*)_off\.png/g,"~/assets/images/K.pngg");
+              e.target.setAttribute("src", imgUrl)
+            },
+            // mouseleave時の処理
+            returnImg: function(e) {
+              var imgUrl = e.target.getAttribute("src");
+              var imgUrl = imgUrl.replace(/\/(.*)_on\.png/g,"~/assets/images/O.pngg");
+              e.target.setAttribute("src", imgUrl)
+            }
+          }
+          // ここまで追加する
+        })
+      }, false);*/
 </script>
 <style scoped lang="scss">
 ul {
@@ -148,7 +236,9 @@ li a {
 }
 
 #section2,
-#section3{
+#section3,
+#section4,
+#section5{
   padding-top: 50px;
   height: 800px;
   display: flex;
@@ -233,6 +323,91 @@ margin: 0;
     align-items: center;
     justify-content: center;
     //animation-iteration-count: infinite;
+}
+.img-box {
+  margin-right:20px;
+  position: relative;
+}
+.img-box .active {
+  margin-right:30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  //transition: 0.2s; // ゆっくり
+  width:  170px; 
+  height: 170px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img-box .active .contents-icon{
+  font-family: 'FCfonts';
+  letter-spacing: .2em;
+	margin: 0 auto;
+  font-size: 45px;
+  line-height: 1;
+  color: #f62e92;
+}
+.img-box:hover .active {
+  opacity: 1;
+}
+.img-box:hover .no-active {
+  opacity: 0;
+  //transition: 0.2s; // ゆっくり
+}
+/*--------------------------------
+　Section
+---------------------------------*/
+
+.section .inner {
+  padding: 80px 10px;
+}
+
+.section .section-title-block {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section .section-title {
+ font-family: 'FCfonts';
+  text-transform: lowercase;
+  letter-spacing: .2em;
+  display: inline-block;
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: #f62e92;
+}
+
+.section .section-desc {
+  text-align: center;
+}
+
+.two-column-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.two-column-image {
+  width: 33%;
+}
+
+.two-column-image img {
+  margin: 0 auto;
+}
+
+.two-column-desc {
+  width: 62%;
 }
 
 </style>

@@ -4,12 +4,6 @@
   "description": "Nuxt.js sumple",
   "author": "yoko_poko",
   "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
   "dependencies": {
     "nuxt": "^2.0.0"
   },
@@ -19,5 +13,12 @@
     "reset-css": "^4.0.1",
     "sass-loader": "^8.0.0",
     "vue-smooth-scroll": "^1.0.13"
+  },
+    "scripts": {
+      "dev": "nuxt",
+      "build": "nuxt build",
+      "start": "nuxt start",
+      "post-update": "yarn upgrade --latest",
+      "generate": "nuxt generate"
+    }
   }
-}
