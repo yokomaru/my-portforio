@@ -3,3 +3,7 @@
 @import '~/assets/scss/_variables';
 @import '~/assets/scss/_base';
 @import '~/assets/scss/_section-title';
+@font-face {
+    font-family: 'FCfonts'; 
+    src: url('../font/PixelMplus12-Bold.ttf') format("truetype");
+  }

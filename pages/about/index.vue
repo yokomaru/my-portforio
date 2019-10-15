@@ -28,6 +28,10 @@
 <script>
   import ArticleBody from '~/components/common/ArticleBody';
 
+  import Vue from 'vue'
+  import vueSmoothScroll from 'vue-smooth-scroll'
+  Vue.use(vueSmoothScroll);
+
   export default {
     components: {
       ArticleBody

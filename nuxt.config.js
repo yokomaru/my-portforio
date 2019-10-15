@@ -57,4 +57,11 @@ export default {
     extend (config, ctx) {
     }
   }
+    /*  head: {
+    link: [
+        { rel: 'stylesheet', href: 'https://unpkg.com/nes.css@0.0.2/css/nes.min.css' },
+        { rel: 'stylesheet', href: 'https://unpkg.com/nes.css/css/nes.min.css' },
+    ]
+  }*/
+
 }
