@@ -1,26 +1,12 @@
 <template>
-  <div class="page-index">
-    <body id="top">
+      <div class="page-index">
+        <body id="top">
       <div id="app">
-        <!--<section class="top">
-          <ul>
-            <li>
-              <a href="#section1" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">セクション1</a>
-            </li>
-            <li>
-              <a href="#section2" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">セクション2</a>
-            </li>
-            <li>
-              <a href="#section3" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">セクション3</a>
-            </li>
-          </ul>
-        </section>-->
         <div id="section1">
           <section class="name">
             <a href="#section2" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">
               <div class="img-box">
                 <img src="~/assets/images/Y.png" alt="" class="no-active">
-                <!--<img src="~/assets/images/icon.png" alt="" class="active">-->
                 <div class="active"> 
                     <div class = "contents-icon">about</div>
                 </div>
@@ -29,7 +15,6 @@
             <a href="#section3" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">
               <div class="img-box">
                 <img src="~/assets/images/O.png" alt="" class="no-active">
-                <!--<img src="~/assets/images/icon.png" alt="" class="active">-->
                 <div class="active"> 
                     <div class = "contents-icon">works</div>
                 </div>
@@ -38,7 +23,6 @@
             <a href="#section4" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">
               <div class="img-box">
                 <img src="~/assets/images/K.png" alt="" class="no-active">
-                <!--<img src="~/assets/images/icon.png" alt="" class="active">-->
                   <div class="active"> 
                     <div class = "contents-icon">skills</div>
                   </div>
@@ -47,7 +31,6 @@
             <a href="#section5" v-smooth-scroll v-smooth-scroll="{ duration: 1000, offset: -50 }">
               <div class="img-box">
                 <img src="~/assets/images/O.png" alt="" class="no-active">
-                <!--<img src="~/assets/images/icon.png" alt="" class="active">-->
                 <div class="active"> 
                   <div class = "contents-icon">contact</div>
                 </div>
@@ -56,7 +39,7 @@
                 <img src="~/assets/images/s.png" >
           </section>
           <section class="mygif">
-                <img src="~/assets/images/yokopoko.gif" alt="welcome!!!!">
+                <img src="~/assets/images/yokopoko.gif" alt="">
           </section>
           <section class="portfolio">
                 <img src="~/assets/images/P.png">
@@ -75,26 +58,31 @@
               <div class="inner">
                 <div class="section-title-block">
                   <h2 class="section-title">ABOUT</h2>
-                  <p class="section-desc">
-                    こんにちは。ヤマダハナコと申します。
-                  </p>
                 </div>
                   <div class="two-column-wrapper">
                     <div class="two-column-image">
                       <img src="~/assets/images/about-me.png" alt="">
                     </div>
                     <div class="two-column-desc">
-                      <p class="text">
-                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br><br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br><br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                      </p>
+                      <ArticleBody>
+                        <p>はじめまして。
+                        平成4年生まれの26歳エンジニアのようこ( <a href = "https://twitter.com/haisuimaru?lang=ja">@haisuimaru </a>)と申します。</br>
+                        社会人歴（IT業界）3年と6か月です。</br>
+                        新卒では主に食品業界向けの業務用システムを受託開発する中小企業のSIerに入社しました。</br>
+                        常駐先ではクッ〇パッドのようなメニューサイトの入力用システムや、飲料会社の営業様が使用する売上管理システム等様々な案件に携わりました。</br>
+                        現在は主に機能改善の見積～納品までの作業を一通りと、問い合わせ対応や自社用の業務効率化のためのツール等を開発しております。</br>
+                        2年目の時に初めて参加したカンファレンスがきっかけで、興味のある技術を自分でいろいろ触っていくうちに、
+                        もっと開発がしたい！という思うようになり転職を決意しました。</br>
+                        是非いろいろお話を聞かせていただきたいです。 </p>
+                      </ArticleBody>
                     </div>
                 </div>
             </div>
           </section>
         </div>
         <div id="section3">
-          <section class="works">
-            <h2 class="section-title">代表作</h2>
+          <section class="section" id="works">
+            <h2 class="section-title">works</h2>
             <ArticleBody>
               <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
               <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
@@ -103,8 +91,8 @@
           </section>
         </div>
         <div id="section4">
-          <section class="skills">
-            <h2 class="section-title">代表作</h2>
+          <section class="section" id="skills">
+            <h2 class="section-title">skills</h2>
             <ArticleBody>
               <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
               <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
@@ -113,8 +101,8 @@
           </section>
         </div>
         <div id="section5">
-          <section class="contact">
-            <h2 class="section-title">代表作</h2>
+          <section class="section"  id="contact">
+            <h2 class="section-title">contact</h2>
             <ArticleBody>
               <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
               <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
@@ -127,34 +115,28 @@
             <div v-scroll="handleScroll" 
           :class="{visible: visible}">
             <a href="#top" v-smooth-scroll>トップへ戻る</a>
+              </div>
         </div>
-  </div>
 </template>
 
 <script>
   import Vue from 'vue'
   import vueSmoothScroll from 'vue-smooth-scroll'
   Vue.use(vueSmoothScroll);
-  import ArticleBody from '~/components/common/ArticleBody';
 
   export default {
-    components: {
+  mounted () {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 1200)
+    })
+  },
+  components: {
       ArticleBody
-    },
-      data() {
-    return {
-      imgSrc: require("~/assets/images/Y.png")
     }
-  }
-//head () {
-//     return {
-//        link: [
-//          { rel: 'stylesheet', href: 'https://unpkg.com/nes.css@0.0.2/css/nes.min.css' },
-//          { rel: 'stylesheet', href: 'https://unpkg.com/nes.css/css/nes.min.css' },
-//        ]
-//      }
-//    }
 }
+  import ArticleBody from '~/components/common/ArticleBody';
+
 // 必ずVueインスタンス作成前に登録する
 Vue.directive('scroll', {
   inserted: function (el, binding) {
@@ -180,28 +162,7 @@ const app = new Vue({
     }
   }
 });
-/*document.addEventListener('DOMContentLoaded', function() {
-        new Vue({
-          el: '#imgtest',
- 
-          //ここから追加する
-          methods: {
-            // mouseover時の処理
-            changeImg: function(e) {
-              var imgUrl = e.target.getAttribute("src");
-              var imgUrl = imgUrl.replace(/\/(.*)_off\.png/g,"~/assets/images/K.pngg");
-              e.target.setAttribute("src", imgUrl)
-            },
-            // mouseleave時の処理
-            returnImg: function(e) {
-              var imgUrl = e.target.getAttribute("src");
-              var imgUrl = imgUrl.replace(/\/(.*)_on\.png/g,"~/assets/images/O.pngg");
-              e.target.setAttribute("src", imgUrl)
-            }
-          }
-          // ここまで追加する
-        })
-      }, false);*/
+
 </script>
 <style scoped lang="scss">
 ul {
@@ -246,6 +207,7 @@ li a {
   justify-content: center;
   margin: 30px 50px 30px 50px;
   background: rgb(224, 224, 224);
+  
 }
 
 #section1,{
@@ -266,39 +228,6 @@ a[href="#top"] {
   background: tomato;
   color: #fff;
   padding: 10px 20px;
-}
-
-.box_DQ_in {
-padding: 15px;
-border: solid 4px #fff;
-border-radius: 10px;
-background-color: #000000;
-margin-top: 30px;
-margin-bottom: 30px;
-color: #fff;
-margin: 0;
- font-family: 'FCfonts';
- font-size:30px;
-}
-.box_DQ_out {
- padding: 2px;
- display: inline-block;
- background-color: #000000;
- border-radius: 12px;
- margin: 30px 0 30px 0;
- font-family: 'FCfonts';
- font-size:30px;
-}
-@keyframes fadein {
-  from {
-      opacity: 0;
-      transform: translateY(20px);
-  }
-
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
 }
 .page-index{
     background-color: tomato;
@@ -327,6 +256,7 @@ margin: 0;
 .img-box {
   margin-right:20px;
   position: relative;
+  z-index: 1;
 }
 .img-box .active {
   margin-right:30px;
@@ -334,7 +264,7 @@ margin: 0;
   left: 0;
   top: 0;
   opacity: 0;
-  //transition: 0.2s; // ゆっくり
+  transition: 0.2s; // ゆっくり
   width:  170px; 
   height: 170px; 
   display: flex;
@@ -399,15 +329,19 @@ margin: 0;
 }
 
 .two-column-image {
-  width: 33%;
+    width: 33%;
 }
 
 .two-column-image img {
-  margin: 0 auto;
+    margin: 0 auto;
+    border-radius: 50%;
+    max-width: 100%;
 }
 
 .two-column-desc {
+  letter-spacing: 0.8px;
   width: 62%;
+  font-size: 18px;
 }
 
 </style>

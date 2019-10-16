@@ -5,7 +5,7 @@ export default {
   generate: {
 		fallback: true
 	},
-  mode: 'universal',
+  mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -23,7 +23,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+ loading: '~/components/loading.vue',
   /*
   ** Global CSS
   */
